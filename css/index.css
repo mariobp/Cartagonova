@@ -109,6 +109,16 @@ html{
   border-width: 6px;
 }
 
+.modal-border{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 6px;
+}
+
+.modal-border .modal-content, .modal-border .modal-footer{
+  background-color: #000;
+}
+
 .border-dropdown{
   border: 3px solid #000;
 }

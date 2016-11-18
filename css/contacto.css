@@ -121,16 +121,16 @@
 }
 .cont-contactBtn .contact-form {
   padding: 0 10%;
-  margin-top: 50px;
+  margin-top: 15px;
   width: 80%;
 }
 .cont-contactBtn .contact-form input, .cont-contactBtn .contact-form textarea {
   border: 1px solid #1d1d1d;
   font-size: 12px;
-  padding: 10px 0;
+  padding: 6px 0;
   text-transform: none;
 }
-.cont-contactBtn .contact-form input[type="text"] {
+.cont-contactBtn .contact-form input[type="text"], .cont-contactBtn .contact-form input[type="email"] {
   float: left;
   margin-bottom: 8px;
   padding-left: 3%;

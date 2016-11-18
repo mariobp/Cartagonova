@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/slider.css">
     <link rel="shortcut icon" href="media/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
-    <title>Cartagonova</title>
+    <title>Cartagonova Contacto</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -144,6 +144,15 @@
     </div>
   </section>
   <section>
+    <div id="modal1" class="modal modal-border">
+      <div class="modal-content">
+        <h4 class="center-align">Envio Exitoso</h4>
+        <p class="center-align">Gracias, pronto nos contactaremos con usted.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Ok</a>
+      </div>
+    </div>
     <div class="container">
         <div class="row valign-wrapper">
             <div class="cont-contactBtn col s12 m6 valign pd-0">
@@ -153,13 +162,14 @@
                     </div>
                     <div class="back">
                         <a href="#" class="flip close"></a>
-                        <form class="contact-form" action="">
-                            <input type="text" placeholder="Nombre" required>
-                            <input type="text" placeholder="Email" required>
-                            <textarea name="" id="" placeholder="Deje su mensaje" required></textarea>
-                              <button class="btn waves-effect waves-light white black-text" type="submit" name="action">Enviar
-                                <i class="material-icons right">send</i>
-                              </button>
+                        <form class="contact-form" id="contacto" action="#" onsubmit="return false;">
+                            <input type="text" name="nombre" placeholder="Nombre" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="asunto" placeholder="Asunto" required>
+                            <textarea name="mensaje" id="" placeholder="Deje su mensaje" required></textarea>
+                            <button class="btn waves-effect waves-light white black-text submit" type="submit" name="action">Enviar
+                              <i class="material-icons right">send</i>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -219,6 +229,8 @@
   <script src="js/TweenMax.min.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/contacto.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
   <script type="text/javascript">
     var loader = document.getElementById("preload");
     var html = document.querySelector("html");
